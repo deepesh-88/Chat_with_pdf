@@ -1,0 +1,212 @@
+/* Apply box-sizing, margin, and padding reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#chat-container {
+    width: 50%;
+    height: 100vh; /* Make the chat container cover the full viewport height */
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+#messages-container {
+    flex: 1; /* Allow this container to grow and fill the available space */
+    width: 100%;
+    margin-top: 20px;
+    overflow-y: auto; /* Enable scrolling if messages overflow */
+    padding: 10px; /* Add padding to ensure messages don't touch the container edge */
+}
+
+#footer {
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 5px 5px;
+    
+}
+
+#footer:hover {
+    border: 2px solid black;
+}
+
+#input-box {
+    flex-grow: 1; /* Make the input box take up the available space */
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    margin: 0 5px;
+    background-color: white;
+    resize: none; /* Disable manual resizing */
+    overflow: auto; /* Enable vertical scrolling when needed */
+    height: 50px; /* Initial height */
+    max-height: 150px; /* Max height before scrolling */
+    outline: none;
+}
+
+#send-button {
+    padding: 5px 10px;
+    border: none;
+    background: rgb(230, 131, 105);
+    color: white;
+    cursor: pointer;
+    height: 30px;
+    width:40px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#send-button:hover {
+    border: 2px solid black;
+}
+
+#send-button img {
+    width: 100%;
+    height: 100%;
+}
+
+#send-button-container {
+    background-color: white;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.user-message,
+.assistant-message {
+    background-color: rgb(236, 206, 174);
+    max-width: 100%;
+    min-height: 50px;
+    width: fit-content;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+    word-wrap: break-word; /* Ensure long words break to avoid overflow */
+    white-space: pre-wrap; /* Preserve whitespace and ensure wrapping */
+}
+
+.assistant-message {
+    background-color: white;
+}
+
+#ack-container {
+    
+    max-width: 600px;
+    background: rgb(251, 246, 226);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+}
+
+.header h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.header p {
+    margin-top: 10px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.disclaimers {
+    margin: 10px 0;
+    padding: 0 20px;
+}
+
+#acknowledge-button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#acknowledge-button button {
+    background-color: #581B98;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#acknowledge-button button:hover {
+    background-color: #451d73;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.fade-transition {
+    transition: opacity 1s ease-in;
+}
+
+
+.spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .spinner .fa-spinner {
+    margin-right: 10px;
+    animation: spin 1s linear infinite;
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+
+
+  #pause-button{
+
+    background-color: black;
+    margin-right:5px;
+    height:30px;
+    width:30px;
+    border-radius:50%;
+    cursor: pointer;
+    padding:5px;
+  }
+
+#pause-button div{
+    height:50%;
+    width:50%;
+    background-color: white;
+    margin:auto;
+    
+}
+
+#queries li{
+    background-color:white;
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    border-radius:10px ;
+    padding:5px;
+    margin:5px;
+    width:fit-content;
+    
+}
+
+
+ 

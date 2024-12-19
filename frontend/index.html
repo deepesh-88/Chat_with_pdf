@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot with Acknowledgements</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="ack-container" class="fade-transition">
+        <div class="header">
+            <h1>Hello, I am your Assistant<span style='font-size:70px;'>&#128513;</span></h1>
+            <p>
+                I'm here to help you. Feel free to ask any questions about NMIMS!</p>
+        </div>
+        
+        
+        
+
+        <div id="acknowledge-button">
+            <button> Start Conversation</button>
+        </div>
+    </div>
+    
+    <div id="chat-container" class="hidden fade-transition">
+        <div id="messages-container">
+            
+        </div>
+        <div class="spinner" id="spinner" style="display: none;">
+            <i class="fa fa-spinner fa-spin"></i>
+            <span>Loading...</span>
+        </div>
+        <div id="footer">
+            <textarea id="input-box" placeholder="Type your message here..."></textarea>
+            <div id="send-button-container">
+                <button id="send-button"><img src="assets\up-arrow-svgrepo-com.svg" alt="Send"></button>
+            </div>
+            
+                <button id="pause-button"><div></div></button>
+            
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
